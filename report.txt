@@ -1,0 +1,24 @@
+In the provided code, the `results.txt` file contains the outcomes of experiments 
+performed on binary search trees (BSTs) with various shapes. The trees are constructed 
+using different combinations of shuffles and shakes, leading to distinct structures, 
+heights, and average depths. When I analyze the tree outputs, I notice that the first configuration, 
+which only involves shuffling the vector of integers 1000 times without shaking, results in 
+moderately balanced trees. These trees have a height and average depth that are neither too low 
+nor too high, and the number of comparisons required for find operations is moderate.
+
+On the other hand, the second configuration, which combines 500 shuffles and 100 mild 
+shakes with a maximum distance of 2, introduces some local structure to the vector. 
+This causes the resulting trees to be less balanced than those in the first configuration, 
+leading to slightly higher heights and average depths. As a result, find operations may 
+require more comparisons on average.
+
+Lastly, the third configuration, which involves 500 shuffles and 500 strong shakes with a 
+maximum distance of 2, creates even more local structure in the vector, resulting in more 
+unbalanced trees than the first two configurations. These trees have higher heights and 
+average depths, and the number of comparisons required for find operations is higher on average.
+
+By examining the `results.txt` file and comparing the metrics for each configuration, 
+I can observe how different tree shapes impact the performance of BSTs in terms of height, 
+average depth, and the number of comparisons needed for find operations. Generally, more balanced 
+trees with lower heights and average depths require fewer comparisons for find operations, while 
+more unbalanced trees with higher heights and average depths need more comparisons.
